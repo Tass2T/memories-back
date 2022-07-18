@@ -8,6 +8,7 @@ export default {
 
     newMemory.creationDate = new Date();
     newMemory.nbLikes = 0;
+    newMemory.imgUrl = req.file.path
 
     newMemory.save((err) => {
       if (err) return err;
